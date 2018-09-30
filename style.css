@@ -17,6 +17,11 @@ body{
     margin: 0 auto;
     padding: 0 2%;
 }
+
+input,label{
+    display: none;
+}
+
 header{
     background-color: rgb(232,232,232);
     margin: 0;
@@ -226,6 +231,37 @@ footer li.con{
 
 @media screen and (max-width: 768px){
     
+    header{
+        padding: 0;
+    }
+
+    header nav li{
+        float: none;
+        text-align : center;
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 100% !important;
+        border-top: 1px solid gray;
+        font-size: 0.8rem;
+    }
+    header nav{
+        background: #5b5b5b;
+    }
+    header nav li a{
+        color: #d1d1d1;
+    }
+    header .wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
     #menu ul li{
         width: 46%;
         padding: 20px 2%;
@@ -261,6 +297,36 @@ footer li.con{
         text-align: center;
         font-size: 14px;
     }
+
+    input{
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 0;
+    }    
+
+    label{
+        display: block;
+        width: 100%;
+        text-indent: -10000px;
+        background: url('images/burger.png') center right;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    header ul{
+        float: none;
+        width: 100%;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    input:checked ~ ul{
+        height: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px){
@@ -271,25 +337,7 @@ footer li.con{
 }
 
 @media screen and (max-width: 480px){
-    header nav li{
-        float: none;
-        text-align : center;
-        margin: 0 auto;
-        padding: 5px 0;
-        width: 90%;
-        border-top: 1px solid gray;
-    }
-    header nav{
-        background: #5b5b5b;
-    }
-    header nav li a{
-        color: #d1d1d1;
-    }
-    header .wrapper{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+    
     
     #menu ul li{
         width: 80%;
@@ -305,5 +353,11 @@ footer li.con{
     }
     header{
         padding-bottom: 0;
+    }
+
+    #copyright{
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        -webkit-text-shadow: 0 1px 1px rgba(0,0,0,0.1);
     }
 }
