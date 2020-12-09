@@ -176,7 +176,7 @@ blockquote{
 footer{
     background: #1E1E1E;
     padding: 30px 0;
-    border-top: 10px solid black;
+    border-top: 3px solid black;
 }
 footer:after{
     clear: both;
