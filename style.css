@@ -105,7 +105,9 @@ header nav ul li a.green{
 }
 #menu ul li p{
     width: 90%;
-   color: #616161;
+    color: #616161;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 #menu ul li h2{
     color: #4E4E4E;
